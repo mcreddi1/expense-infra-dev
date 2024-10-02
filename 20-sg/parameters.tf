@@ -25,5 +25,5 @@ resource "aws_ssm_parameter" "mysql_sg" {
 resource "aws_ssm_parameter" "ansible_sg" {
   name  = "/${var.project_name}/${var.environment}/ansible_sg_id"
   type  = "String"
-  value = module.ansible_sg.id
+  value = module.ansible_sg.
 }
